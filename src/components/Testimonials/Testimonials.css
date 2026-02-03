@@ -1,0 +1,16 @@
+.testimonials__slider {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.testimonials__slider::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonials__slide {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}

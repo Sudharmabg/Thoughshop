@@ -1,0 +1,25 @@
+.about-section__slider {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.about-section__slider::-webkit-scrollbar {
+    display: none;
+}
+
+.about-section__slide {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}
+
+.about-section__slide img {
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+}
+
+.about-section__slide:hover img {
+    transform: scale(1.02);
+}
